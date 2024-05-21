@@ -1,0 +1,121 @@
+:root{
+    --primary-color: hsl(14, 45%, 36%);
+    --second-color: hsl(332, 51%, 32%);
+    --background-page: hsl(0, 0%, 100%);
+    --background-box: hsl(330, 100%, 98%);
+    --border-line: hsl(30, 18%, 87%);
+    --span: hsl(30, 10%, 34%);
+    --font: hsl(24, 5%, 18%);
+}
+
+body{
+    background-color: #f3e5d8;
+    color: var(--span);
+}
+.body{
+    width: 40%;
+    margin:  3rem auto;
+    background-color: var(--background-page);
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    font-family: "Outfit", sans-serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: black;
+}
+
+h2{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+p{
+    padding: 1rem 0;
+}
+
+.preparation{
+    background-color: var(--background-box);
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.preparation p{
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+.preparation span{
+    font-weight: bold;
+}
+.preparation ul{
+    padding: 0 1rem;
+}
+.preparation li{
+    list-style:disc;
+    line-height: 1.5rem;
+}
+.preparation li::marker{
+    color: var(--second-color);
+    font-size: 0.7rem;
+}
+.ingredients{
+    padding: 0 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-line);
+}
+.ingredients li{
+    list-style: disc;
+    line-height: 1.5rem;
+}
+.ingredients li::marker{
+    color: var(--primary-color);
+}
+
+.instructions{
+    padding: 0 0 0 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-line);
+}
+.instructions li{
+    list-style:decimal;
+    padding-bottom: 1rem;
+}
+.instructions li::marker{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.instructions span{
+    font-weight: bold;
+}
+tr{
+    border-bottom: 1px solid var(--border-line);
+    line-height: 2rem;
+}
+tr:last-child{
+    border-bottom: none;
+}
+td{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+th{
+    text-align: start;
+    text-indent: 2rem;
+}
+table{
+    width: 100%;
+}
